@@ -2,6 +2,8 @@
 use strict;
 die "perl $0 <genomic.gff|genomic.gff.gz> <all.cds|all.cds.gz>\n" unless @ARGV == 2;
 
+##### example inputs: GCA_002891405.2_Csec_1.0_genomic.gff.gz, GCA_002891405.2_Csec_1.0_cds_from_genomic.fna.gz #####
+
 my $in = shift;
 my $pool = shift;
 
