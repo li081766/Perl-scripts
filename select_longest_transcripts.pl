@@ -5,6 +5,8 @@ die "perl $0 <genomic.gff|genomic.gff.gz> <all.cds|all.cds.gz>\n" unless @ARGV =
 my $in = shift;
 my $pool = shift;
 
+##### get the longest transcript of each mRNA #####
+
 if( $in =~ /.*\.gz$/ ){
 	open IN, "gzip -dc $in | " || die "$!\n";
 }else{
